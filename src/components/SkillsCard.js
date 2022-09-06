@@ -1,10 +1,10 @@
-import React from React.js;
+import React from "react";
 
 function SkillsCard ({skillImg, skillName}) {
     return (
         <div className="skillCard">
             <img src={skillImg} height="100px" weight="100px"/>
-            <p>{skillName}</p>
+            <p className="skillName">{skillName}</p>
         </div>
     );
 }

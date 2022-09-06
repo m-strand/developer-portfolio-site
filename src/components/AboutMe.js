@@ -1,11 +1,11 @@
-import React from React.js;
-import Pdf from './Resume.pdf';
+import React from "react";
+import Pdf from './resources/resume.pdf';
 
 function AboutMe () {
     return (
-        <div className="about">
+        <div id="AboutMe" className="about">
             <div>
-                    <h2 className="section"><span class="section-text">ABOUT <span class="circled">ME</span></span></h2>
+                    <h2 className="section"><span className="section-text">ABOUT <span className="circled">ME</span></span></h2>
                     <p className="personal">I am a Developer with experience in building applications using HTML, CSS, Javascript, and React.</p>
                     <p className="personal">I'm a creative problem solver with an interest in building products that are clean and intuitive. Previous to being a developer, I worked as a Senior Operations Associate in which I've been able to be a part of helping to test and improve product features implemented by developers.</p>
                     <p className="personal">I now want to move into a developer role so that I can take my experience in supervising the implementation of new features and utilze it in how I design features by anticipating concerns or needs that will occur downstream. </p>
@@ -17,15 +17,15 @@ function AboutMe () {
                     <h2 className="current">CURRENTLY...</h2>
                     <div className="imgContainer">
                         <div className="currentCard">
-                            <p className="currentlyText">LISTENING TO</p>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYnMKUKjNKW6gwLHTL8J5ZNZzCWOpJkS3Gg&usqp=CAU" className="currentlyImg" />
-                            <p className="currentlyText">Dance Fever by Florence + The Machine</p>
-                        </div>
-            
-                        <div className="currentCard">
                             <p className="currentlyText">READING</p>
                             <img className="currentlyImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjV3Gdt5kX2k8EFzF3vuSUqFscZ9OaZwAjYw&usqp=CAU" />
                             <p className="currentlyText">The Little Book of Hygge: Danish Secrets to Happy Living by Meik Wiking</p>
+                        </div>
+
+                        <div className="currentCard">
+                            <p className="currentlyText">LISTENING TO</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYnMKUKjNKW6gwLHTL8J5ZNZzCWOpJkS3Gg&usqp=CAU" className="currentlyImg" />
+                            <p className="currentlyText">Dance Fever by Florence + The Machine</p>
                         </div>
             
                         <div className="currentCard">

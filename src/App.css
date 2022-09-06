@@ -27,14 +27,15 @@
   text-align: right; 
   float: right;
   margin: 10px 0 10px 0;
+ 
 }
 
 .navLink {
+  text-decoration: none;
   float: left;
   margin: 10px;
   font-weight: 100;
   padding: 5px;
-  
 }
 
 .lastname {
@@ -90,9 +91,10 @@
 .bounce-text {
   position: relative;
   display: flex;
+  color: black;
 }
 
-.selected {
+.navLink:hover {
   border-bottom: 1px solid #dddddd;
 }
 
@@ -186,26 +188,40 @@
 }
 
 .currentlyImg {
-  /*box-shadow: 40px 5px rgba(0, 21, 64, 0.14);*/
-  width: 50%;
-  
-
+  width: 25%;
 }
 
-.skillContainer {
-  display: flex;
-  margin: 50px;
+.skillsContainer {
+  margin-top: 50px;
   font-family: 'Josefin Sans';
 }
 
+.skillCardSection {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .skillCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex: 25%;
   padding: 5px;
   
 }
 
+.skillName {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+}
+
 .greenBtn {
+  text-decoration: none;
   font-size: 25px;
+  color: black;
   background-color: #D9FF19;
   border: none;
   border-radius: 40px;
@@ -218,14 +234,27 @@
 .projectCard {
   border: 1px solid #dddddd;
   border-radius: 30px;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   width: 50%;
-  display: block;
+  
+}
+
+.projectName {
+  font-family: 'Josefin Sans';
+  width: 100%;
   text-align: center;
-  padding-bottom: 100px;
+  padding: 20px;
+
+}
+.links {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
 .projectLinks {
@@ -233,6 +262,12 @@
   color: black;
   font-family: 'Josefin Sans';
   margin: 10px;
+  padding: 5px;
+}
+ 
+.projectLinks:hover {
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .langs {
@@ -254,8 +289,7 @@
 }
 
 .footerIcon {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  padding: 5px;
+  font-size: 30px;
+  color: black;
+  padding: 20px;
 }

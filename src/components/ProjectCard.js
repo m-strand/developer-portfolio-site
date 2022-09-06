@@ -1,13 +1,14 @@
-import React from React.js;
+import React from "react";
 
-function ProjectCard ({preview, name, description, demo, repo, langs}) {
+function ProjectCard ({preview, name, demo, repo, langs}) {
     return (
         <div className="projectCard">
-                <img src={preview} height="100px" width="100px"/>
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <a className="projectLinks" href={demo}>DEMO</a>
-                <a className="projectLinks" href={repo}>REPO</a>
+                <h3 className="projectName">{name}</h3>
+                <img src={preview} height="200px" width="400px"/>
+                <div className="links">
+                    {demo==null? null : <a className="projectLinks" href={demo}>DEMO</a>}
+                    <a className="projectLinks" href={repo}>REPO</a>
+                </div>
                 <div className="langDiv">
                     {langs.map((lang) => {
                         return (

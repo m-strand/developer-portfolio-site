@@ -1,24 +1,27 @@
-import React from React.js;
+import React from "react";
 import ProjectCard from "./ProjectCard.js";
+import GanniMockImg from "./resources/ganniImg.PNG";
+import BookFinderImg from "./resources/bookfinderImg.PNG";
+import AirbnbMockImg from "./resources/airbnbImg.PNG";
 
 function Projects () {
     const projArr = [
         {
-            preview: {insertobjectlocation},
+            preview: GanniMockImg,
             repo: "https://github.com/m-strand/ganni-mockup-site",
             demo: "",
             langs: ["HTML", "CSS", "React.js"],
             name: "Ganni Mock Website"
         },
         {
-            preview: {insertobjectlocation},
+            preview: BookFinderImg,
             repo: "https://github.com/m-strand/phase-1-final-project",
-            demo: "",
+            demo: null,
             langs: ["HTML", "CSS", "Javascript"],
             name: "BookFinder"
         }, 
         {
-            preview: {insertobjectlocation},
+            preview: AirbnbMockImg,
             repo: "https://github.com/m-strand/airbnb-mock-site",
             demo: "",
             langs: ["HTML", "CSS", "React.js"],
@@ -26,7 +29,7 @@ function Projects () {
         }
     ]
     return (
-        <div className="projects">
+        <div id="Projects" className="projects">
             <h2 className="section"><span className="section-text">PROJECTS</span></h2>
             {projArr.map((project) => {
                 return(

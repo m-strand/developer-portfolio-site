@@ -1,5 +1,5 @@
-import React from React.js;
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { HashLink } from 'react-router-hash-link';
 
 function NavBar () {
     return (
@@ -28,10 +28,10 @@ function NavBar () {
             </div>
   
             <div className="nav">
-                <NavLink className="navLink selected" to="/AboutMe">ABOUT</NavLink>
-                <NavLink className="navLink" to="/Projects">PROJECTS</NavLink>
-                <NavLink className="navLink" to="/Skills">SKILLS</NavLink>
-                <NavLink className="navLink bounce-text" to="/ContactForm">
+                <HashLink className="navLink selected" smooth to="/#AboutMe">ABOUT</HashLink>
+                <HashLink className="navLink" smooth to="/#Projects">PROJECTS</HashLink>
+                <HashLink className="navLink" smooth to="/#Skills">SKILLS</HashLink>
+                <HashLink className="navLink bounce-text" smooth to="/#ContactForm">
                     <div className="c">C</div>
                     <div className="o">O</div>
                     <div className="n">N</div>
@@ -39,7 +39,7 @@ function NavBar () {
                     <div className="a">A</div>
                     <div className="c">C</div>
                     <div className="t">T</div>
-                </NavLink>
+                </HashLink>
             </div>
         </div>
     )

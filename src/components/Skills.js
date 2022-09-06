@@ -1,42 +1,50 @@
-import React from React.js;
+import React from "react";
 import SkillsCard from "./SkillsCard.js";
+import CSSskill from "./resources/css_skill.png";
+import HTMLskill from "./resources/html_skill.png";
+import JSskill from "./resources/javascript_skill.png";
+import ReactSkill from "./resources/React_skill.png";
+import SQLskill from "./resources/SQL_skill.png";
+import BootstrapSkill from "./resources/bootstrap.png";
 
 function Skills () {
     const skillsArr = [
       {
-        "img": "https://cdn-icons-png.flaticon.com/512/2305/2305978.png",
+        "img": HTMLskill,
         "name": "HTML"
       }, 
       {
-        "img": "https://cdn-icons-png.flaticon.com/512/3094/3094297.png",
+        "img": CSSskill,
         "name": "CSS"
       }, 
       {
-        "img": "https://cdn-icons-png.flaticon.com/512/1348/1348026.png",
+        "img": BootstrapSkill,
         "name": "Bootstrap"
       }, 
       {
-        "img": "https://cdn-icons-png.flaticon.com/512/6943/6943960.png",
+        "img": JSskill,
         "name": "Javascript"
       }, 
       {
-        "img": "https://cdn-icons.flaticon.com/png/512/1183/premium/1183723.png?token=exp=1655924264~hmac=0d3d6a83af67b40bbe5a4e0e2d1ea83f",
+        "img": ReactSkill,
         "name": "React"
       },
  
       {
-        "img": "https://cdn-icons-png.flaticon.com/512/2306/2306083.png",
+        "img": SQLskill,
         "name": "SQL"
       }
     ]
     return (
-        <div className="skillsContainer">
+        <div id="Skills" className="skillsContainer">
             <h2 className="section"><span className="section-text">SKILLS</span></h2>
+            <div className="skillCardSection">
             {skillsArr.map((skill) => {
                 return (
                 <SkillsCard skillImg={skill.img} skillName={skill.name} />
                 )
             })}
+            </div>
         </div>
     );
 }
