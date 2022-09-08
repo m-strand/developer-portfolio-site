@@ -10,7 +10,7 @@ function Projects () {
 
             <div className="projectCard">
                 <h3 className="projectName">Ganni Mock Website</h3>
-                <img src={GanniMockImg} height="200px" width="400px"/>
+                <img src={GanniMockImg} height="55%" width="60%"/>
                 <div className="links">
                     <a className="projectLinks" href="https://ganni-mockup-site.herokuapp.com/">DEMO</a>
                     <a className="projectLinks" href="https://github.com/m-strand/ganni-mockup-site">REPO</a>
@@ -24,7 +24,7 @@ function Projects () {
 
         <div className="projectCard">
                 <h3 className="projectName">BookFinder</h3>
-                <img src={BookFinderImg} height="200px" width="400px"/>
+                <img src={BookFinderImg} height="55%" width="60%"/>
                 <div className="links">
                     <a className="projectLinks" href="https://github.com/m-strand/phase-1-final-project">REPO</a>
                 </div>
@@ -37,7 +37,7 @@ function Projects () {
 
         <div className="projectCard">
                 <h3 className="projectName">Airbnb Mock Website</h3>
-                <img src={AirbnbMockImg} height="200px" width="400px"/>
+                <img src={AirbnbMockImg} height="55%" width="60%"/>
                 <div className="links">
                     <a className="projectLinks" href="https://airbnb-mock-site.herokuapp.com/artic">DEMO</a>
                     <a className="projectLinks" href="https://github.com/m-strand/airbnb-mock-site">REPO</a>
