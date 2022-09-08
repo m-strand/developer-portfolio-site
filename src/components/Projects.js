@@ -1,42 +1,54 @@
 import React from "react";
-import ProjectCard from "./ProjectCard.js";
 import GanniMockImg from "./resources/ganniImg.PNG";
 import BookFinderImg from "./resources/bookfinderImg.PNG";
 import AirbnbMockImg from "./resources/airbnbImg.PNG";
 
 function Projects () {
-    const projArr = [
-        {
-            preview: GanniMockImg,
-            repo: "https://github.com/m-strand/ganni-mockup-site",
-            demo: "https://ganni-mockup-site.herokuapp.com/",
-            langs: ["HTML", "CSS", "React.js"],
-            name: "Ganni Mock Website"
-        },
-        {
-            preview: BookFinderImg,
-            repo: "https://github.com/m-strand/phase-1-final-project",
-            demo: null,
-            langs: ["HTML", "CSS", "Javascript"],
-            name: "BookFinder"
-        }, 
-        {
-            preview: AirbnbMockImg,
-            repo: "https://github.com/m-strand/airbnb-mock-site",
-            demo: "https://airbnb-mock-site.herokuapp.com/artic",
-            langs: ["HTML", "CSS", "React.js"],
-            name: "Airbnb Mock Website"
-        }
-    ]
     return (
         <div id="Projects" className="projects">
             <h2 className="section"><span className="section-text">PROJECTS</span></h2>
-            {projArr.map((project) => {
-                return(
-                <ProjectCard preview={project.preview} repo={project.repo} langs={project.langs} name={project.name} />
-                )
-            })}
+
+            <div className="projectCard">
+                <h3 className="projectName">Ganni Mock Website</h3>
+                <img src={GanniMockImg} height="200px" width="400px"/>
+                <div className="links">
+                    <a className="projectLinks" href="https://ganni-mockup-site.herokuapp.com/">DEMO</a>
+                    <a className="projectLinks" href="https://github.com/m-strand/ganni-mockup-site">REPO</a>
+                </div>
+                <div className="langDiv">
+                    <p className="langs">HTML</p>
+                    <p className="langs">CSS</p>
+                    <p className="langs">React.js</p>
+                </div>
         </div>
+
+        <div className="projectCard">
+                <h3 className="projectName">BookFinder</h3>
+                <img src={BookFinderImg} height="200px" width="400px"/>
+                <div className="links">
+                    <a className="projectLinks" href="https://github.com/m-strand/phase-1-final-project">REPO</a>
+                </div>
+                <div className="langDiv">
+                    <p className="langs">HTML</p>
+                    <p className="langs">CSS</p>
+                    <p className="langs">Javascript</p>
+                </div>
+        </div>
+
+        <div className="projectCard">
+                <h3 className="projectName">Airbnb Mock Website</h3>
+                <img src={AirbnbMockImg} height="200px" width="400px"/>
+                <div className="links">
+                    <a className="projectLinks" href="https://airbnb-mock-site.herokuapp.com/artic">DEMO</a>
+                    <a className="projectLinks" href="https://github.com/m-strand/airbnb-mock-site">REPO</a>
+                </div>
+                <div className="langDiv">
+                    <p className="langs">HTML</p>
+                    <p className="langs">CSS</p>
+                    <p className="langs">React.js</p>
+                </div>
+        </div>
+    </div>
     );
 }
 

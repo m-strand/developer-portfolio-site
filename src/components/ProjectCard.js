@@ -6,7 +6,7 @@ function ProjectCard ({preview, name, demo, repo, langs}) {
                 <h3 className="projectName">{name}</h3>
                 <img src={preview} height="200px" width="400px"/>
                 <div className="links">
-                    {demo==null? null : <a className="projectLinks" href={demo}>DEMO</a>}
+                    <a className="projectLinks" href={demo}>DEMO</a>
                     <a className="projectLinks" href={repo}>REPO</a>
                 </div>
                 <div className="langDiv">
