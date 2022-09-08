@@ -9,7 +9,7 @@ function Projects () {
         {
             preview: GanniMockImg,
             repo: "https://github.com/m-strand/ganni-mockup-site",
-            demo: "",
+            demo: "https://ganni-mockup-site.herokuapp.com/",
             langs: ["HTML", "CSS", "React.js"],
             name: "Ganni Mock Website"
         },
@@ -23,7 +23,7 @@ function Projects () {
         {
             preview: AirbnbMockImg,
             repo: "https://github.com/m-strand/airbnb-mock-site",
-            demo: "",
+            demo: "https://airbnb-mock-site.herokuapp.com/artic",
             langs: ["HTML", "CSS", "React.js"],
             name: "Airbnb Mock Website"
         }
