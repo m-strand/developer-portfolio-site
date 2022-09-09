@@ -6,12 +6,15 @@
     font-family: 'Inter', sans-serif;
 }
 .navBar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   border-bottom: 1px solid #dddddd;
   z-index: 1;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -19,7 +22,6 @@
    display: block;
    float: left;
    margin: 10px 0 10px 50px;
-   padding: 5px;
    font-family: 'Josefin Sans';
   
 }
@@ -175,7 +177,6 @@
 .currentCard {
   flex: 33.33%;
   padding: 10px;
-  
 }
 
 .current {
@@ -190,7 +191,7 @@
 }
 
 .currentlyImg {
-  width: 25%;
+  width: 30%;
 }
 
 .skillsContainer {
@@ -203,8 +204,8 @@
 
 .skillCardSection {
   display: flex;
-  text-align: center;
-  clear: both;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -215,9 +216,14 @@
   padding: 5px;
   
 }
+.skillImg {
+  width: 100px;
+  height: 100px;
+}
 
 .skillName {
   width: 100%;
+  text-align: center;
   padding: 10px;
   font-family: 'Josefin Sans';
   font-size: 20px;
@@ -298,3 +304,39 @@
   color: black;
   padding: 20px;
 }
+
+@media only screen and (max-width: 750px) {
+    .skillCard {
+      width: 30%;
+      height: 30%;
+    }
+
+    .intro-component {
+      margin-top: 150px;
+    }
+
+    .intro {
+      font-size: 35px;
+    }
+
+    .navBar {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo {
+      margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .intro {
+      font-size: 30px;
+    }
+
+    .imgContainer {
+      display: flex;
+       margin: 50px 0;
+     }
+
+}
+

@@ -3,7 +3,7 @@ import React from "react";
 function SkillsCard ({skillImg, skillName}) {
     return (
         <div className="skillCard">
-            <img src={skillImg} height="100px" weight="100px"/>
+            <img src={skillImg} className="skillImg"/>
             <p className="skillName">{skillName}</p>
         </div>
     );

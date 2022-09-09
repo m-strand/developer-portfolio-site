@@ -41,7 +41,7 @@ function Skills () {
             <div className="skillCardSection">
             {skillsArr.map((skill) => {
                 return (
-                <SkillsCard skillImg={skill.img} skillName={skill.name} />
+                    <SkillsCard skillImg={skill.img} skillName={skill.name} />
                 )
             })}
             </div>
