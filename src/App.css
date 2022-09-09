@@ -338,5 +338,8 @@
        margin: 50px 0;
      }
 
+     .projectCard {
+      width: 75%;
+     }
 }
 
