@@ -29,7 +29,8 @@ function NavBar () {
   
             <div className="nav">
                 <HashLink className="navLink selected" smooth to="/#AboutMe">ABOUT</HashLink>
-                <HashLink className="navLink" smooth to="/#Projects">PROJECTS</HashLink>
+                <HashLink className="navLink" smooth to="/#UXProjects">UX PROJECTS</HashLink>
+                <HashLink className="navLink" smooth to="/#DevProjects">DEV PROJECTS</HashLink>
                 <HashLink className="navLink" smooth to="/#Skills">SKILLS</HashLink>
                 <HashLink className="navLink bounce-text" smooth to="/#ContactForm">
                     <div className="c">C</div>
