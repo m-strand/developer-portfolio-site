@@ -7,33 +7,6 @@ import SQLskill from "./resources/SQL_skill.png";
 import BootstrapSkill from "./resources/bootstrap.png";
 
 function Skills () {
-    const skillsArr = [
-      {
-        "img": HTMLskill,
-        "name": "HTML"
-      }, 
-      {
-        "img": CSSskill,
-        "name": "CSS"
-      }, 
-      {
-        "img": BootstrapSkill,
-        "name": "Bootstrap"
-      }, 
-      {
-        "img": JSskill,
-        "name": "Javascript"
-      }, 
-      {
-        "img": ReactSkill,
-        "name": "React"
-      },
- 
-      {
-        "img": SQLskill,
-        "name": "SQL"
-      }
-    ]
     return (
         <div id="Skills" className="skillsContainer">
             <h2 className="section"><span className="section-text">SKILLS</span></h2>
